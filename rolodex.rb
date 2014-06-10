@@ -1,6 +1,7 @@
 class Rolodex
 	def initialize(name)
-		@contacts =[]
+		@contacts =[ 
+			@contacts << Contact.new("Julie", "Hache", "julie@bitmakerlabs.com", "Instructor")]
 		@contact_id = 1000
 	end
 

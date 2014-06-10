@@ -13,6 +13,8 @@ end
 
 get '/contacts' do
 	@contacts = []
+	@contacts << Contact.new("Julie", "Hache", "julie@bitmakerlabs.com", "Instructor")
+	erb :contacts
 end 
 
 post '/contacts' do 
@@ -22,7 +24,7 @@ post '/contacts' do
 end 
 
 get '/contacts/:id' do
-	
+
 end 
 
 get '/contacts/:id/edit' do
