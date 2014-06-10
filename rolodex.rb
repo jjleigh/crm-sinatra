@@ -1,7 +1,8 @@
 class Rolodex
+	attr_reader :contacts
+	
 	def initialize(name)
-		@contacts =[ 
-			@contacts << Contact.new("Julie", "Hache", "julie@bitmakerlabs.com", "Instructor")]
+		@contacts =[]
 		@contact_id = 1000
 	end
 
