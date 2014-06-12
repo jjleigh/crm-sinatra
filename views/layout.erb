@@ -1,10 +1,36 @@
 <!DOCTYPE html>
 <html>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lobster">
+  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
 	<link rel ='stylesheet' type='text/css' href='/style.css'>
   <head>
-  	<title>My assignment</title>
+  	<title>Justine's CRM</title>
   </head>
+  <header>
+    <h2> Justine's CRM</h2>
+  <nav class="nav-link-container">
+    <ul class="nav-link-list">
+      <li class="nav-links">About</li>
+      <li class="nav-links">Log In</li>
+      <li class="nav-links"><a href="/contacts/new">Add</a></li>
+      <li class="nav-links"><a href="/contacts/find">Find</li>
+      <li class="nav-links"><a href="/contacts">View</a></li>
+      <li class="nav-links"><a href="/contacts/edit">Edit</a></li>
+       <li class="nav-links"><a href="/contacts/delete">Delete</a></li>
+    </ul>
+  </nav>
+
+  </header>
   <body>
-    <%= yield %>
+
+
+  <%= yield %>
   </body>
+  <footer class="nav-link-container footer">
+    <ul class="nav-link-list">
+      <li class="nav-links">contact us</li>
+      <li class="nav-links">Sign Up</li>
+    </ul>
+  </footer>
 </html>

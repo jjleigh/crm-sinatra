@@ -1,4 +1,90 @@
-h1 {
-	font-family: "Helvetica Neue";
-	font-size: 42px;
+* {
+	margin: 0;
+	padding: 0;
 }
+/*these selectors apply to the layout page*/
+header{
+	position: fixed;
+	width: 100%;
+}
+header h2 {
+	font-family: Lobster;
+	background-color: white;
+	font-size: 50px;
+}
+
+body {
+	background-color: #97A5B2;
+	text-align: center;
+}
+
+.nav-link-container {
+	background-color: #000;
+	color: #fff;
+}
+
+.nav-link-list {
+	text-align: center;
+	font-family: 'shadows into light';
+	padding: 16px 0;
+	margin: 0;
+	list-style: none;
+}
+
+.nav-links {
+	display: inline;
+	margin-left: 60px;
+}
+
+.nav-links:first-of-type {
+	margin-left: 0;
+}
+
+.footer {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.header {
+	position: fixed;
+	top: 0; right: 0; left: 0;
+	z-index: 90;
+}
+/*These layous apply to the add contacts page*/
+
+#container {
+	margin: 200px auto 50px auto;
+	padding: 80px 50px;
+  display: inline-block;
+	background-color: white;
+	border-radius: 100%;
+	border: 1px solid black;
+	text-align: center;
+
+}
+
+#submit {
+	margin-top: 10px;
+}
+
+.field {
+	margin-bottom: 5px;
+}
+
+.field label {
+	display: inline-block;
+	width: 75px;
+}
+
+
+/*These selectors apply to the contacts erb*/
+
+#see-contacts {
+	font-family: "Lato";
+	color: black;
+	padding-top: 240px;
+	
+}
+

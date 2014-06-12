@@ -1,18 +1,7 @@
-<h1>All Contacts</h1>
-
-<ul>
-	<%@@rolodex.contacts.each do |contact| %>
-	<li><%= contact.first_name %><%= contact.last_name %></li>
-	<% end %>
-</ul>
-
-    <div>
-    <h1> Heller</h1>
-    	<p class = 'para'> My page is blank</p>
-    <h2>This is my second header</h2>
-    <p class= 'para'> I am adding things to my page to make it more interesting. it is still a boring page with a boring layout.</p>
-  </div>
-  <div>
-  	<h1>My name is blank</h1>
-  	<p> This page has alot more content now</p>
-  </div>
+<div id="see-contacts">
+	<ul>
+		<% @@rolodex.contacts.each do |contact| %>
+		<li><%= contact.first_name %><%= contact.last_name %></li>
+		<% end %>
+	</ul>
+</div>
