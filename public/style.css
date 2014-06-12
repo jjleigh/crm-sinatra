@@ -47,11 +47,11 @@ body {
 	left: 0;
 }
 
-.header {
+/*.header {
 	position: fixed;
 	top: 0; right: 0; left: 0;
 	z-index: 90;
-}
+}*/
 /*These layous apply to the add contacts page*/
 
 #container {
@@ -81,10 +81,14 @@ body {
 
 /*These selectors apply to the contacts erb*/
 
+.header-display{
+	padding-top: 
+}
+
 #see-contacts {
 	font-family: "Lato";
 	color: black;
-	padding-top: 240px;
+	padding-top: 140px;
 	
 }
 
