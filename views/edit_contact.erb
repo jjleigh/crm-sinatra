@@ -1,6 +1,6 @@
 <div class="container">
 	<h1>Edit a Contact</h1>
-	<form action="/contacts<%= @contact.id %>" method="post">
+	<form action="/contacts/<%= @contact.id %>" method="post">
 		<input type="hidden" name="_method" value="put">
 		<div class="field">
 			<label>First name</label>
