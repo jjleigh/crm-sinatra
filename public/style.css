@@ -62,7 +62,7 @@ nav a:visited {
 /*These layous apply to the add contacts page*/
 
 .container {
-	margin: 200px auto 50px auto;
+	margin: 150px auto 50px auto;
 	padding: 80px 50px;
   display: inline-block;
 	background-color: white;
@@ -109,3 +109,22 @@ nav a:visited {
 	text-align: left;
 }
 
+/*This code applies to the details page*/
+
+.about-header {
+	font-family: "Shadows Into Light";
+	padding-bottom: 15px;
+}
+
+.about-p {
+	font-family: "Lato";
+	padding-bottom: 5px;
+}
+
+/*#enjoy {
+	text-align: center;
+	font-family: "Lato";
+	padding-bottom: 1px;
+}
+
+*/
