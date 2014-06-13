@@ -1,6 +1,13 @@
-<h1><%= @contact.first_name %> <%= @contact.last_name %></h1>
-<p><strong>Email:</strong> <%= @contact.email %></p>
-<p><strong>Note:</strong></p>
-<p><%= @contact.note %></p>
-<a href="/contacts/<%= contact.id %>">Edit This Contact</a>
+
+<div class="contact-container">
+	<h1>Contact</h1>
+	<div class= "text-left">
+		<h3><%= @contact.first_name %> <%= @contact.last_name %></h3>
+		<p><strong>Email:</strong> <%= @contact.email %></p>
+		<p><strong>Note:</strong></p>
+		<p><%= @contact.note %></p>
+	</div>
+</div>
+<p><a href="/contacts/<%= @contact.id %>/edit">Edit this contact</a></p>
+<p><a href="/contacts/<%= @contact.id %>/delete">Delete this contact</a></p>
 	

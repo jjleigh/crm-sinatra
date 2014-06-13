@@ -15,8 +15,19 @@ header h2 {
 }
 
 body {
-	background-color: #97A5B2;
+	background-color: #7F7D61;
 	text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: red;
+}
+nav a:visited {
+	color: white;
 }
 
 .nav-link-container {
@@ -48,15 +59,10 @@ body {
 	left: 0;
 }
 
-/*.header {
-	position: fixed;
-	top: 0; right: 0; left: 0;
-	z-index: 90;
-}*/
 /*These layous apply to the add contacts page*/
 
 #container {
-	margin: 100px auto 50px auto;
+	margin: 200px auto 50px auto;
 	padding: 80px 50px;
   display: inline-block;
 	background-color: white;
@@ -78,7 +84,6 @@ body {
 	width: 75px;
 }
 
-
 /*These selectors apply to the contacts erb*/
 
 .header-display{
@@ -89,5 +94,18 @@ body {
 	font-family: "Lato";
 	color: black;
 	padding-top: 140px;
+}
+
+/*This code applies to the details page*/
+
+.contact-container {
+    width: 200px;
+    margin: 0 auto;
+    padding-top: 140px;
+    font-family: Lato;
+}
+
+.text-left {
+	text-align: left;
 }
 

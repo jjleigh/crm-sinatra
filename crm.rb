@@ -24,6 +24,11 @@ end
 
 get '/contacts/:id' do
 	@contact = @@rolodex.find(params[:id].to_i)
+  if @contact
+    erb :show_contact
+  else
+    raise Sinatra::NotFound
+  end
 	erb :show_contact
 end
 
@@ -37,7 +42,7 @@ put '/contacts/:id' do
 end
 
 delete '/contacts/:id' do
-  # delete the contact with the specified id 
+ redirect to '/contacts'
 end 
 
 post '/contacts' do 
