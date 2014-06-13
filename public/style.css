@@ -61,7 +61,7 @@ nav a:visited {
 
 /*These layous apply to the add contacts page*/
 
-#container {
+.container {
 	margin: 200px auto 50px auto;
 	padding: 80px 50px;
   display: inline-block;
