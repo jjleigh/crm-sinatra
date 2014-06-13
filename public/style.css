@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 }
+
 /*these selectors apply to the layout page*/
 header{
 	position: fixed;
@@ -55,14 +56,13 @@ body {
 /*These layous apply to the add contacts page*/
 
 #container {
-	margin: 200px auto 50px auto;
+	margin: 100px auto 50px auto;
 	padding: 80px 50px;
   display: inline-block;
 	background-color: white;
 	border-radius: 100%;
 	border: 1px solid black;
 	text-align: center;
-
 }
 
 #submit {
@@ -89,6 +89,5 @@ body {
 	font-family: "Lato";
 	color: black;
 	padding-top: 140px;
-	
 }
 
