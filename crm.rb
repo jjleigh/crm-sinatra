@@ -1,10 +1,7 @@
-require_relative 'rolodex'
 require 'sinatra'
 require 'data_mapper'
 
 DataMapper.setup(:default, 'sqlite3:database.sqlite3')
-
-@@rolodex = Rolodex.new
 
 get '/' do 
 	@crm_app_name = "Justine's crm"
@@ -30,7 +27,7 @@ get '/contacts/:id' do
 end
 
 get '/contacts/:id/edit' do
-	@contact = @@rolodex.find(params[:id].to_i)
+	@contact = Contact.get(params[:id].to_i)
 	if @contact
 		erb :edit_contact
 	else
@@ -39,7 +36,7 @@ get '/contacts/:id/edit' do
 end 
 
 put '/contacts/:id' do
-	@contact = @@rolodex.find(params[:id].to_i)
+	@contact = Contact.get(params[:id].to_i)
 	if @contact
 		@contact.first_name = params[:first_name]
 		@contact.last_name = params[:last_name]
@@ -53,9 +50,9 @@ put '/contacts/:id' do
 end
 
 delete '/contacts/:id' do
-	@contact = @@rolodex.find(params[:id].to_i)
+	@contact = Contact.get(params[:id].to_i)
 	if @contact
-		@@rolodex.remove_contact(@contact)
+		@contact.destroy
  		redirect to '/contacts'
  	else
  		raise Sinatra::NotFound
